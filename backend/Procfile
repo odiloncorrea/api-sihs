@@ -1,1 +1,1 @@
-web: java -Dserver.port=54097 -Dspring.profiles.active=prod $JAVA_OPTS -jar target/aulaSpringDemo.jar
+web: java -Dserver.port=$PORT -Dspring.profiles.active=prod $JAVA_OPTS -jar target/AUlaDemo.jar
