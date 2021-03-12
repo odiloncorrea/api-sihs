@@ -15,7 +15,6 @@
 	<description>Super Projeto Revolucionário que vai fazer sucesso</description>
 	<properties>
 		<java.version>11</java.version>
-		<start-class>br.alessio.dbf.aplication</start-class>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -92,6 +91,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
+					<mainClass>br.alessio.dbf.aplication.AUlaDemoApplication</mainClass>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
