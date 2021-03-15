@@ -91,6 +91,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
+					<fork>true</fork>
 					<mainClass>br.alessio.dbf.aplication.AUlaDemoApplication</mainClass>
 					<excludes>
 						<exclude>
@@ -99,6 +100,13 @@
 						</exclude>
 					</excludes>
 				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.gmavenplus</groupId>
@@ -123,7 +131,7 @@
 			<plugins>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-jar-plugin</artifactId>
+					<artifactId>maven-war-plugin</artifactId>
 					<version>3.2.3</version>
 					<executions>
 						<execution>
