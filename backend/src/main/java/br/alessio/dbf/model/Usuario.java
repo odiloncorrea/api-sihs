@@ -29,7 +29,6 @@ public class Usuario {
 
     @Column(name = "email", length = 255)
     @Email(message = "*Por favor digite um email válido")
-    @CPF(message = "*Por favor digite um cpf válido")
     private String email;
 
     @Column(name = "senha", length = 255)
