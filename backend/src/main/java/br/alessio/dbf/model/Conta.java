@@ -30,11 +30,11 @@ public class Conta {
     private Instant dataVencimento;
 
     @Column(name = "valor")
-    @NotEmpty(message = "*Por favor digite um valor")
+    @NotNull(message = "*Por favor digite um valor")
     private double valor;
 
     @Column(name = "situacao")
-    @NotEmpty(message = "*Por favor digite a situação")
+    @NotNull(message = "*Por favor digite a situação")
     private boolean situacao;
 
     @JoinColumn(name="idTipo")
